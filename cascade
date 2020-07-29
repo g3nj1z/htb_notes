@@ -1,12 +1,16 @@
-Begin of nmap
+# Begin of nmap
 - nmap -sC (default script) -sV (service detection) -oA (save in all formats) 10.10.10.182
 
 Port 88 = Kerberos
+>
 ![Kerberos](https://www.manageengine.com/products/active-directory-audit/kb/images/event-4771-kerberos-authentication-illustration.jpg)
-
+>
+>
 Port 135 = Microsoft RPC
+>
 ![Microsoft RPC](https://docs.microsoft.com/en-us/windows/win32/rpc/images/httprpc1.png)
-
+>
+>
 Enumerating RPC to identify usernames
 Setting up a bruteforce and creating a custom wordlist with hashcat
 Enumerating LDAP with LDAPSEARCH
