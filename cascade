@@ -1,6 +1,9 @@
 Begin of nmap
 - nmap -sC (default script) -sV (service detection) -oA (save in all formats) 10.10.10.182
 
+Port 88 = Kerberos
+Port 135 = Microsoft RPC
+
 Enumerating RPC to identify usernames
 Setting up a bruteforce and creating a custom wordlist with hashcat
 Enumerating LDAP with LDAPSEARCH
