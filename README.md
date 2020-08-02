@@ -1,3 +1,3 @@
 # htb_notes
 
-Command notes
+ ## Personal Notes
