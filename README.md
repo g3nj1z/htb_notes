@@ -5,6 +5,7 @@
 ### OWASP
 
 [SQL INJECTION](https://sechow.com/bricks/docs/login-1.html)
+[Reverse Shell Cheat Sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 
 ### Linux
 
