@@ -1,7 +1,5 @@
 # htb_notes
 
-## Personal Notes
-
 ### OWASP
 
 [Sql Injection](https://sechow.com/bricks/docs/login-1.html)
