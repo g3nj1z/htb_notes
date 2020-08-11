@@ -22,4 +22,4 @@
 
 #### Quick TCP Scan
 
-nmap -A vv -oA quick <targetip>
+[nmap -A vv -oA quick <targetip>]()
