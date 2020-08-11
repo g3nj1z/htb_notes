@@ -23,3 +23,6 @@
 #### Quick TCP Scan
 
 nmap -A vv -oA quick -targetip-
+>
+nmap -A -sU -oA udp -targetip-
+>
