@@ -27,4 +27,37 @@ nmap -A vv -oA quick -targetip-
 #### Quick UDP Scan
 
 nmap -A -sU -oA udp -targetip-
->
+
+#### Full TCP Scan
+
+nmap -A -p- -oA full -targetip-
+
+### Content Discovery
+
+#### Gobuster
+
+gobuster dir -u -targetip- -w /usr/share/wordlist/dirbuster/directory-medium-23.txt -t 50
+
+##### Gobuster with file extension
+
+gobuster dir -u -targetip- -w /usr/share/wordlist/dirbuster/directory-medium-23.txt -t 50 -x php
+
+#### Nikto web server scan
+
+nikto -h -targetip-
+
+#### Wordpress scan
+
+wpscan -u -targetip- -e
+
+#### Netcat banner grab
+
+nc -v -tagretip- -port-
+
+##### Telnet banner grab
+
+telnet -targetip- -port-
+
+
+
+
